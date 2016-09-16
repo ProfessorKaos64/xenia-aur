@@ -1,0 +1,1063 @@
+==> Making package: xenia-git 1.0.119.r402.gbc0ddbb-1 (Fri Sep 16 14:38:12 EDT 2016)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Cloning xenia git repo...
+Cloning into bare repository '/home/mikeyd/github_repos/xenia-git/xenia'...
+==> Validating source files with md5sums...
+    xenia ... Skipped
+==> Extracting sources...
+  -> Creating working copy of xenia git repo...
+Cloning into 'xenia'...
+done.
+==> Starting pkgver()...
+==> Starting build()...
+- linting 534 files
+
+Linting completed successfully.
+Submodule 'third_party/binutils-ppc-cygwin' (https://github.com/benvanik/binutils-ppc-cygwin) registered for path 'third_party/binutils-ppc-cygwin'
+Submodule 'third_party/capstone' (https://github.com/xenia-project/capstone.git) registered for path 'third_party/capstone'
+Submodule 'third_party/catch' (https://github.com/philsquared/Catch.git) registered for path 'third_party/catch'
+Submodule 'third_party/gflags' (https://github.com/benvanik/gflags.git) registered for path 'third_party/gflags'
+Submodule 'third_party/imgui' (https://github.com/ocornut/imgui.git) registered for path 'third_party/imgui'
+Submodule 'third_party/libav' (https://github.com/xenia-project/libav.git) registered for path 'third_party/libav'
+Submodule 'third_party/premake-core' (https://github.com/premake/premake-core.git) registered for path 'third_party/premake-core'
+Submodule 'third_party/premake-export-compile-commands' (https://github.com/xenia-project/premake-export-compile-commands.git) registered for path 'third_party/premake-export-compile-commands'
+Submodule 'third_party/snappy' (https://github.com/xenia-project/snappy.git) registered for path 'third_party/snappy'
+Submodule 'third_party/spirv-headers' (https://github.com/KhronosGroup/SPIRV-Headers) registered for path 'third_party/spirv-headers'
+Submodule 'third_party/spirv-tools' (https://github.com/xenia-project/SPIRV-Tools.git) registered for path 'third_party/spirv-tools'
+Submodule 'third_party/xbyak' (https://github.com/xenia-project/xbyak.git) registered for path 'third_party/xbyak'
+Submodule 'third_party/yaml-cpp' (https://github.com/jbeder/yaml-cpp.git) registered for path 'third_party/yaml-cpp'
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/binutils-ppc-cygwin'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/capstone'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/catch'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/gflags'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/imgui'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/libav'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-export-compile-commands'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/snappy'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/spirv-headers'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/spirv-tools'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/xbyak'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/yaml-cpp'...
+Submodule path 'third_party/binutils-ppc-cygwin': checked out '6f3f15db908d339472db7be450f7c58bb71545cc'
+Submodule path 'third_party/capstone': checked out '121057635173f4da4ce26dd676c7470aef7bddce'
+Submodule path 'third_party/catch': checked out '7424b23bfb4423fd1213141633844f09faaff8bc'
+Submodule path 'third_party/gflags': checked out '78b15171a7fce5815df58a919ab593ce80222028'
+Submodule path 'third_party/imgui': checked out 'dc4a07c49a256f4a2c7dcb35d1f4fa3556d57d1c'
+Submodule path 'third_party/libav': checked out '9919df9ebe02baa4f4a8082e82d6807680977f34'
+Submodule path 'third_party/premake-core': checked out '8f0683d823963d097cf4bc2958b5f50f35f6456a'
+Submodule 'modules/codelite' (https://github.com/premake/premake-codelite.git) registered for path 'third_party/premake-core/modules/codelite'
+Submodule 'modules/d' (https://github.com/premake/premake-dlang.git) registered for path 'third_party/premake-core/modules/d'
+Submodule 'modules/monodevelop' (https://github.com/premake/premake-monodevelop.git) registered for path 'third_party/premake-core/modules/monodevelop'
+Submodule 'modules/xcode' (https://github.com/premake/premake-xcode.git) registered for path 'third_party/premake-core/modules/xcode'
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/modules/codelite'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/modules/d'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/modules/monodevelop'...
+Cloning into '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/modules/xcode'...
+Submodule path 'third_party/premake-core/modules/codelite': checked out 'ba3d6930014499920e682406541b6b92e78592f6'
+Submodule path 'third_party/premake-core/modules/d': checked out 'b5c5e65ad267f03e42b6ef20835c21da42c95a01'
+Submodule path 'third_party/premake-core/modules/monodevelop': checked out '218495031b9a39848083cc9b2860b3a1d2dc4183'
+Submodule path 'third_party/premake-core/modules/xcode': checked out 'a5811c6e39e0c61f8f62536482a929f288f788e2'
+Submodule path 'third_party/premake-export-compile-commands': checked out '59e3e55df8dd87eea70556f50d172a17f1c4b6d0'
+Submodule path 'third_party/snappy': checked out '303cd2c64c62c579a8592236f723b611afd3bc15'
+Submodule path 'third_party/spirv-headers': checked out '34d319db9d6cefe93191b921f5f1593378a98c4c'
+Submodule path 'third_party/spirv-tools': checked out '327bc49a2d811ce3c8b3443c2624f1f807965c62'
+Submodule path 'third_party/xbyak': checked out '7ba56efc538dd3020816c0a60ac535b3ea7d8543'
+Submodule path 'third_party/yaml-cpp': checked out 'e92321aee52fd27566601f9cca53ba90b41e15c1'
+mkdir -p build/bootstrap
+cc -o build/bootstrap/premake_bootstrap -DPREMAKE_NO_BUILTIN_SCRIPTS -DLUA_USE_POSIX -DLUA_USE_DLOPEN -I"src/host/lua/src" src/host/os_writefile_ifnotequal.c src/host/os_chdir.c src/host/string_startswith.c src/host/os_copyfile.c src/host/path_getrelative.c src/host/os_isdir.c src/host/path_join.c src/host/os_locate.c src/host/os_getversion.c src/host/os_islink.c src/host/os_uuid.c src/host/criteria_matches.c src/host/premake_main.c src/host/os_stat.c src/host/os_match.c src/host/os_isfile.c src/host/lua_auxlib.c src/host/os_chmod.c src/host/string_endswith.c src/host/path_translate.c src/host/os_rmdir.c src/host/buffered_io.c src/host/debug_prompt.c src/host/path_isabsolute.c src/host/os_compile.c src/host/os_realpath.c src/host/string_hash.c src/host/path_getabsolute.c src/host/os_mkdir.c src/host/path_normalize.c src/host/os_pathsearch.c src/host/os_is64bit.c src/host/string_sha1.c src/host/premake.c src/host/path_wildcards.c src/host/os_getcwd.c src/host/zip_extract.c src/host/http.c src/host/lua/src/lapi.c src/host/lua/src/lcode.c src/host/lua/src/ldebug.c src/host/lua/src/ldump.c src/host/lua/src/lgc.c src/host/lua/src/liolib.c src/host/lua/src/lmathlib.c src/host/lua/src/loadlib.c src/host/lua/src/lopcodes.c src/host/lua/src/lparser.c src/host/lua/src/lstring.c src/host/lua/src/ltable.c src/host/lua/src/ltm.c src/host/lua/src/lvm.c src/host/lua/src/lbaselib.c src/host/lua/src/ldblib.c src/host/lua/src/ldo.c src/host/lua/src/lfunc.c src/host/lua/src/linit.c src/host/lua/src/llex.c src/host/lua/src/lmem.c src/host/lua/src/lobject.c src/host/lua/src/loslib.c src/host/lua/src/lstate.c src/host/lua/src/lstrlib.c src/host/lua/src/ltablib.c src/host/lua/src/lundump.c src/host/lua/src/lzio.c -lm -ldl -lrt
+./build/bootstrap/premake_bootstrap embed
+Running action 'embed'...
+Compiling... 
+Embedding...
+Writing...
+Generated ../src/scripts.c...
+./build/bootstrap/premake_bootstrap --to=build/bootstrap gmake
+Building configurations...
+Running action 'gmake'...
+Generated build/bootstrap/Makefile...
+Generated build/bootstrap/Premake5.make...
+Generated contrib/zlib/build/Makefile...
+Generated contrib/libzip/build/Makefile...
+Generated contrib/curl/build/Makefile...
+Done (347ms).
+make -C build/bootstrap -j`getconf _NPROCESSORS_ONLN`
+make[1]: warning: -jN forced in submake: disabling jobserver mode.
+make[1]: Entering directory '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/build/bootstrap'
+==== Building zip-lib (release) ====
+Creating bin/Release
+Creating obj/Release
+mkstemp.c
+zip_add.c
+zip_add_dir.c
+zip_add_entry.c
+../mkstemp.c: In function ‘_zip_mkstemp’:
+../mkstemp.c:76:8: warning: implicit declaration of function ‘getpid’ [-Wimplicit-function-declaration]
+  pid = getpid();
+        ^~~~~~
+zip_close.c
+zip_delete.c
+zip_dir_add.c
+../zip_close.c: In function ‘_zip_create_temp_output’:
+../zip_close.c:621:2: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+  close(tfd);
+  ^~~~~
+zip_dirent.c
+zip_discard.c
+zip_entry.c
+zip_err_str.c
+zip_error.c
+zip_error_clear.c
+zip_error_get.c
+zip_error_get_sys_type.c
+zip_error_strerror.c
+zip_error_to_str.c
+zip_extra_field.c
+zip_extra_field_api.c
+zip_fclose.c
+zip_fdopen.c
+zip_file_add.c
+../zip_fdopen.c: In function ‘zip_fdopen’:
+../zip_fdopen.c:62:13: warning: implicit declaration of function ‘dup’ [-Wimplicit-function-declaration]
+     if ((fd=dup(fd_orig)) < 0) {
+             ^~~
+../zip_fdopen.c:68:2: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+  close(fd);
+  ^~~~~
+zip_file_error_clear.c
+zip_file_error_get.c
+zip_file_get_comment.c
+zip_file_get_external_attributes.c
+zip_file_get_offset.c
+zip_file_rename.c
+zip_file_replace.c
+zip_file_set_comment.c
+zip_file_set_external_attributes.c
+zip_file_strerror.c
+zip_filerange_crc.c
+zip_fopen.c
+zip_fopen_encrypted.c
+zip_fopen_index.c
+zip_fopen_index_encrypted.c
+zip_fread.c
+zip_get_archive_comment.c
+zip_get_archive_flag.c
+zip_get_compression_implementation.c
+zip_get_encryption_implementation.c
+zip_get_file_comment.c
+zip_get_name.c
+zip_get_num_entries.c
+zip_get_num_files.c
+zip_memdup.c
+zip_name_locate.c
+zip_new.c
+zip_open.c
+zip_rename.c
+zip_replace.c
+zip_set_archive_comment.c
+zip_set_archive_flag.c
+zip_set_default_password.c
+zip_set_file_comment.c
+zip_set_file_compression.c
+zip_set_name.c
+zip_source_buffer.c
+zip_source_close.c
+zip_source_crc.c
+zip_source_deflate.c
+zip_source_error.c
+zip_source_file.c
+zip_source_filep.c
+zip_source_free.c
+zip_source_function.c
+zip_source_layered.c
+zip_source_open.c
+zip_source_pkware.c
+zip_source_pop.c
+zip_source_read.c
+zip_source_stat.c
+zip_source_window.c
+zip_source_zip.c
+zip_source_zip_new.c
+zip_stat.c
+zip_stat_index.c
+zip_stat_init.c
+zip_strerror.c
+zip_string.c
+zip_unchange.c
+zip_unchange_all.c
+zip_unchange_archive.c
+zip_unchange_data.c
+zip_utf-8.c
+Linking zip-lib
+==== Building zlib-lib (release) ====
+Creating bin/Release
+Creating obj/Release
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzclose.c
+gzlib.c
+../gzlib.c: In function ‘gz_open’:
+../gzlib.c:14:17: warning: implicit declaration of function ‘lseek’ [-Wimplicit-function-declaration]
+ #  define LSEEK lseek
+                 ^
+../gzlib.c:256:24: note: in expansion of macro ‘LSEEK’
+         state->start = LSEEK(state->fd, 0, SEEK_CUR);
+                        ^~~~~
+gzread.c
+../gzread.c: In function ‘gz_load’:
+../gzread.c:30:15: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+         ret = read(state->fd, buf + *have, len - *have);
+               ^~~~
+gzwrite.c
+../gzread.c: In function ‘gzclose_r’:
+../gzread.c:591:11: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     ret = close(state->fd);
+           ^~~~~
+../gzwrite.c: In function ‘gz_comp’:
+../gzwrite.c:84:15: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+         got = write(state->fd, strm->next_in, strm->avail_in);
+               ^~~~~
+../gzwrite.c: In function ‘gzclose_w’:
+../gzwrite.c:573:9: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     if (close(state->fd) == -1)
+         ^~~~~
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+trees.c
+uncompr.c
+zutil.c
+Linking zlib-lib
+==== Building curl-lib (release) ====
+Creating bin/Release
+Creating obj/Release
+amigaos.c
+asyn-ares.c
+asyn-thread.c
+base64.c
+conncache.c
+connect.c
+content_encoding.c
+cookie.c
+curl_addrinfo.c
+curl_des.c
+curl_endian.c
+curl_fnmatch.c
+curl_gethostname.c
+curl_gssapi.c
+curl_memrchr.c
+curl_multibyte.c
+curl_ntlm.c
+curl_ntlm_core.c
+curl_ntlm_msgs.c
+curl_ntlm_wb.c
+curl_rtmp.c
+curl_sasl.c
+curl_sasl_gssapi.c
+curl_sasl_sspi.c
+curl_sspi.c
+curl_threads.c
+dict.c
+dotdot.c
+easy.c
+escape.c
+file.c
+fileinfo.c
+formdata.c
+ftp.c
+ftplistparser.c
+getenv.c
+getinfo.c
+gopher.c
+hash.c
+hmac.c
+hostasyn.c
+hostcheck.c
+hostip.c
+hostip4.c
+hostip6.c
+hostsyn.c
+http.c
+http2.c
+http_chunks.c
+http_digest.c
+http_negotiate.c
+http_negotiate_sspi.c
+http_proxy.c
+idn_win32.c
+if2ip.c
+imap.c
+inet_ntop.c
+inet_pton.c
+krb5.c
+ldap.c
+llist.c
+md4.c
+md5.c
+memdebug.c
+mprintf.c
+multi.c
+netrc.c
+non-ascii.c
+nonblock.c
+nwlib.c
+nwos.c
+openldap.c
+parsedate.c
+pingpong.c
+pipeline.c
+pop3.c
+progress.c
+rawstr.c
+rtsp.c
+security.c
+select.c
+sendf.c
+share.c
+slist.c
+smb.c
+smtp.c
+socks.c
+socks_gssapi.c
+socks_sspi.c
+speedcheck.c
+splay.c
+ssh.c
+strdup.c
+strequal.c
+strerror.c
+strtok.c
+strtoofft.c
+telnet.c
+tftp.c
+timeval.c
+transfer.c
+url.c
+version.c
+axtls.c
+cyassl.c
+darwinssl.c
+gskit.c
+gtls.c
+nss.c
+openssl.c
+polarssl.c
+polarssl_threadlock.c
+schannel.c
+vtls.c
+warnless.c
+wildcard.c
+x509asn1.c
+Linking curl-lib
+==== Building Premake5 (release) ====
+Creating ../../bin/release
+Creating obj/Release
+buffered_io.c
+criteria_matches.c
+debug_prompt.c
+http.c
+lapi.c
+lbaselib.c
+lcode.c
+ldblib.c
+ldebug.c
+ldo.c
+ldump.c
+lfunc.c
+lgc.c
+linit.c
+liolib.c
+llex.c
+lmathlib.c
+lmem.c
+loadlib.c
+lobject.c
+lopcodes.c
+loslib.c
+lparser.c
+lstate.c
+lstring.c
+lstrlib.c
+ltable.c
+ltablib.c
+../../src/host/lua/src/ltablib.c: In function ‘addfield’:
+../../src/host/lua/src/ltablib.c:137:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   if (!lua_isstring(L, -1))
+   ^~
+../../src/host/lua/src/ltablib.c:140:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     luaL_addvalue(b);
+     ^~~~~~~~~~~~~
+ltm.c
+lundump.c
+lvm.c
+lzio.c
+lua_auxlib.c
+os_chdir.c
+os_chmod.c
+os_compile.c
+os_copyfile.c
+os_getcwd.c
+os_getversion.c
+os_is64bit.c
+os_isdir.c
+os_isfile.c
+os_islink.c
+os_locate.c
+os_match.c
+os_mkdir.c
+os_pathsearch.c
+os_realpath.c
+os_rmdir.c
+os_stat.c
+os_uuid.c
+os_writefile_ifnotequal.c
+path_getabsolute.c
+path_getrelative.c
+path_isabsolute.c
+path_join.c
+path_normalize.c
+path_translate.c
+path_wildcards.c
+premake.c
+premake_main.c
+string_endswith.c
+string_hash.c
+string_sha1.c
+string_startswith.c
+zip_extract.c
+scripts.c
+../../src/host/zip_extract.c: In function ‘write_link’:
+../../src/host/zip_extract.c:75:71: warning: unused parameter ‘count’ [-Wunused-parameter]
+ static int write_link(const char* filename, const char* bytes, size_t count)
+                                                                       ^~~~~
+Linking Premake5
+make[1]: Leaving directory '/home/mikeyd/github_repos/xenia-git/src/xenia/third_party/premake-core/build/bootstrap'
+Building configurations...
+Running action 'gmake'...
+Generated build/Makefile...
+Generated build/capstone.make...
+Generated build/gflags.make...
+Generated build/glew.make...
+Generated build/glslang-spirv.make...
+Generated build/imgui.make...
+Generated build/libavcodec.make...
+Generated build/libavutil.make...
+Generated build/snappy.make...
+Generated build/spirv-tools.make...
+Generated build/vulkan-loader.make...
+Generated build/xxhash.make...
+Generated build/yaml-cpp.make...
+Generated build/xenia-core.make...
+Generated build/xenia-app.make...
+Generated build/xenia-apu.make...
+Generated build/xenia-apu-nop.make...
+Generated build/xenia-base.make...
+Generated build/xenia-base-tests.make...
+Generated build/xenia-cpu.make...
+Generated build/xenia-cpu-tests.make...
+Generated build/xenia-cpu-ppc-tests.make...
+Generated build/xenia-cpu-backend-x64.make...
+Generated build/xenia-debug-ui.make...
+Generated build/xenia-gpu.make...
+Generated build/xenia-gpu-shader-compiler.make...
+Generated build/xenia-gpu-null.make...
+Generated build/xenia-gpu-gl4.make...
+Generated build/xenia-gpu-gl4-trace-viewer.make...
+Generated build/xenia-gpu-gl4-trace-dump.make...
+Generated build/xenia-gpu-vulkan.make...
+Generated build/xenia-gpu-vulkan-trace-viewer.make...
+Generated build/xenia-gpu-vulkan-trace-dump.make...
+Generated build/xenia-hid.make...
+Generated build/xenia-hid-demo.make...
+Generated build/xenia-hid-nop.make...
+Generated build/xenia-kernel.make...
+Generated build/xenia-ui.make...
+Generated build/xenia-ui-gl.make...
+Generated build/xenia-ui-window-gl-demo.make...
+Generated build/xenia-ui-spirv.make...
+Generated build/xenia-ui-vulkan.make...
+Generated build/xenia-ui-window-vulkan-demo.make...
+Generated build/xenia-vfs.make...
+Done (644ms).
+premake5 executable not found, attempting build...
+Building configurations...
+Running action 'codelite'...
+Generated build/xenia.workspace...
+Generated build/capstone.project...
+Generated build/gflags.project...
+Generated build/glew.project...
+Generated build/glslang-spirv.project...
+Generated build/imgui.project...
+Generated build/libavcodec.project...
+Generated build/libavutil.project...
+Generated build/snappy.project...
+Generated build/spirv-tools.project...
+Generated build/vulkan-loader.project...
+Generated build/xxhash.project...
+Generated build/yaml-cpp.project...
+Generated build/xenia-core.project...
+Generated build/xenia-app.project...
+Generated build/xenia-apu.project...
+Generated build/xenia-apu-nop.project...
+Generated build/xenia-base.project...
+Generated build/xenia-base-tests.project...
+Generated build/xenia-cpu.project...
+Generated build/xenia-cpu-tests.project...
+Generated build/xenia-cpu-ppc-tests.project...
+Generated build/xenia-cpu-backend-x64.project...
+Generated build/xenia-debug-ui.project...
+Generated build/xenia-gpu.project...
+Generated build/xenia-gpu-shader-compiler.project...
+Generated build/xenia-gpu-null.project...
+Generated build/xenia-gpu-gl4.project...
+Generated build/xenia-gpu-gl4-trace-viewer.project...
+Generated build/xenia-gpu-gl4-trace-dump.project...
+Generated build/xenia-gpu-vulkan.project...
+Generated build/xenia-gpu-vulkan-trace-viewer.project...
+Generated build/xenia-gpu-vulkan-trace-dump.project...
+Generated build/xenia-hid.project...
+Generated build/xenia-hid-demo.project...
+Generated build/xenia-hid-nop.project...
+Generated build/xenia-kernel.project...
+Generated build/xenia-ui.project...
+Generated build/xenia-ui-gl.project...
+Generated build/xenia-ui-window-gl-demo.project...
+Generated build/xenia-ui-spirv.project...
+Generated build/xenia-ui-vulkan.project...
+Generated build/xenia-ui-window-vulkan-demo.project...
+Generated build/xenia-vfs.project...
+Done (540ms).
+Setting up the build environment...
+
+- git submodule init / update...
+
+- running premake...
+
+Success!
+Building configurations...
+Running action 'gmake'...
+Done (613ms).
+Building configurations...
+Running action 'codelite'...
+Done (541ms).
+make: Entering directory '/home/mikeyd/github_repos/xenia-git/src/xenia/build'
+==== Building capstone (debug_linux) ====
+Creating bin/Linux/Debug
+Creating obj/Linux/Debug/Linux/Debug/capstone
+MCInst.c
+MCInstrDesc.c
+MCRegisterInfo.c
+SStream.c
+X86ATTInstPrinter.c
+X86Disassembler.c
+X86DisassemblerDecoder.c
+X86IntelInstPrinter.c
+X86Mapping.c
+X86Module.c
+cs.c
+utils.c
+Linking capstone
+==== Building gflags (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/gflags
+gflags.cc
+gflags_completions.cc
+gflags_reporting.cc
+Linking gflags
+==== Building glew (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/glew
+glew.c
+Linking glew
+==== Building glslang-spirv (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/glslang-spirv
+InReadableOrder.cpp
+SPVRemapper.cpp
+SpvBuilder.cpp
+disassemble.cpp
+doc.cpp
+Linking glslang-spirv
+==== Building imgui (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/imgui
+imgui.cpp
+imgui_demo.cpp
+imgui_draw.cpp
+Linking imgui
+==== Building libavutil (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/libavutil
+adler32.c
+aes.c
+atomic.c
+audio_fifo.c
+avstring.c
+base64.c
+blowfish.c
+buffer.c
+../third_party/libav/libavutil/avstring.c:57:16: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        return s1;
+               ^~
+../third_party/libav/libavutil/avstring.c:61:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return s1;
+                   ^~
+../third_party/libav/libavutil/avstring.c:71:16: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        return haystack;
+               ^~~~~~~~
+../third_party/libav/libavutil/avstring.c:75:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return haystack;
+                   ^~~~~~~~
+channel_layout.c
+4 warnings generated.
+cpu.c
+crc.c
+des.c
+dict.c
+display.c
+downmix_info.c
+error.c
+eval.c
+fifo.c
+file.c
+../third_party/libav/libavutil/eval.c:174:21: warning: 16 enumeration values not handled in switch: 'e_value', 'e_const', 'e_func0'... [-Wswitch]
+            switch (e->type) {
+                    ^
+../third_party/libav/libavutil/dict.c:83:58: warning: passing 'const char *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            if (flags & AV_DICT_DONT_STRDUP_KEY) av_free(key);
+                                                         ^~~
+../third_party/libav/libavutil/mem.h:184:20: note: passing argument to parameter 'ptr' here
+void av_free(void *ptr);
+                   ^
+../third_party/libav/libavutil/dict.c:84:58: warning: passing 'const char *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            if (flags & AV_DICT_DONT_STRDUP_VAL) av_free(value);
+                                                         ^~~~~
+../third_party/libav/libavutil/mem.h:184:20: note: passing argument to parameter 'ptr' here
+void av_free(void *ptr);
+                   ^
+../third_party/libav/libavutil/dict.c:105:36: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            m->elems[m->count].key = key;
+                                   ^ ~~~
+../third_party/libav/libavutil/dict.c:109:38: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            m->elems[m->count].value = value;
+                                     ^ ~~~~~
+4 warnings generated.
+file_open.c
+float_dsp.c
+1 warning generated.
+frame.c
+hmac.c
+../third_party/libav/libavutil/hmac.c:61:21: warning: incompatible pointer types assigning to 'void (*)(void *)' from 'void (struct AVMD5 *)' [-Wincompatible-pointer-types]
+        c->init     = av_md5_init;
+                    ^ ~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:62:21: warning: incompatible pointer types assigning to 'void (*)(void *, const uint8_t *, int)' (aka 'void (*)(void *, const unsigned char *, int)') from 'void (struct AVMD5 *, const uint8_t *, const int)' (aka 'void (struct AVMD5 *, const unsigned char *, const int)') [-Wincompatible-pointer-types]
+        c->update   = av_md5_update;
+                    ^ ~~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:63:21: warning: incompatible pointer types assigning to 'void (*)(void *, uint8_t *)' (aka 'void (*)(void *, unsigned char *)') from 'void (struct AVMD5 *, uint8_t *)' (aka 'void (struct AVMD5 *, unsigned char *)') [-Wincompatible-pointer-types]
+        c->final    = av_md5_final;
+                    ^ ~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:70:21: warning: incompatible pointer types assigning to 'void (*)(void *, const uint8_t *, int)' (aka 'void (*)(void *, const unsigned char *, int)') from 'void (struct AVSHA *, const uint8_t *, unsigned int)' (aka 'void (struct AVSHA *, const unsigned char *, unsigned int)') [-Wincompatible-pointer-types]
+        c->update   = av_sha_update;
+                    ^ ~~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:71:21: warning: incompatible pointer types assigning to 'void (*)(void *, uint8_t *)' (aka 'void (*)(void *, unsigned char *)') from 'void (struct AVSHA *, uint8_t *)' (aka 'void (struct AVSHA *, unsigned char *)') [-Wincompatible-pointer-types]
+        c->final    = av_sha_final;
+                    ^ ~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:78:21: warning: incompatible pointer types assigning to 'void (*)(void *, const uint8_t *, int)' (aka 'void (*)(void *, const unsigned char *, int)') from 'void (struct AVSHA *, const uint8_t *, unsigned int)' (aka 'void (struct AVSHA *, const unsigned char *, unsigned int)') [-Wincompatible-pointer-types]
+        c->update   = av_sha_update;
+                    ^ ~~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:79:21: warning: incompatible pointer types assigning to 'void (*)(void *, uint8_t *)' (aka 'void (*)(void *, unsigned char *)') from 'void (struct AVSHA *, uint8_t *)' (aka 'void (struct AVSHA *, unsigned char *)') [-Wincompatible-pointer-types]
+        c->final    = av_sha_final;
+                    ^ ~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:86:21: warning: incompatible pointer types assigning to 'void (*)(void *, const uint8_t *, int)' (aka 'void (*)(void *, const unsigned char *, int)') from 'void (struct AVSHA *, const uint8_t *, unsigned int)' (aka 'void (struct AVSHA *, const unsigned char *, unsigned int)') [-Wincompatible-pointer-types]
+        c->update   = av_sha_update;
+                    ^ ~~~~~~~~~~~~~
+../third_party/libav/libavutil/hmac.c:87:21: warning: incompatible pointer types assigning to 'void (*)(void *, uint8_t *)' (aka 'void (*)(void *, unsigned char *)') from 'void (struct AVSHA *, uint8_t *)' (aka 'void (struct AVSHA *, unsigned char *)') [-Wincompatible-pointer-types]
+        c->final    = av_sha_final;
+                    ^ ~~~~~~~~~~~~
+imgutils.c
+intmath.c
+9 warnings generated.
+lfg.c
+lls.c
+log.c
+log2_tab.c
+../third_party/libav/libavutil/imgutils.c:320:62: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    return av_image_fill_pointers(dst_data, pix_fmt, height, src, dst_linesize);
+                                                             ^~~
+../third_party/libav/libavutil/imgutils.c:101:37: note: passing argument to parameter 'ptr' here
+                           uint8_t *ptr, const int linesizes[4])
+                                    ^
+lzo.c
+1 warning generated.
+mathematics.c
+md5.c
+mem.c
+opt.c
+../third_party/libav/libavutil/md5.c:165:24: warning: passing 'char [2]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    av_md5_update(ctx, "\200", 1);
+                       ^~~~~~
+../third_party/libav/libavutil/md5.c:144:47: note: passing argument to parameter 'src' here
+void av_md5_update(AVMD5 *ctx, const uint8_t *src, const int len)
+                                              ^
+../third_party/libav/libavutil/md5.c:167:28: warning: passing 'char [1]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        av_md5_update(ctx, "", 1);
+                           ^~
+../third_party/libav/libavutil/md5.c:144:47: note: passing argument to parameter 'src' here
+void av_md5_update(AVMD5 *ctx, const uint8_t *src, const int len)
+                                              ^
+../third_party/libav/libavutil/log.c:86:33: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                (getenv("TERM") && isatty(2) || getenv("AV_LOG_FORCE_COLOR"));
+                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~ ~~
+../third_party/libav/libavutil/log.c:86:33: note: place parentheses around the '&&' expression to silence this warning
+                (getenv("TERM") && isatty(2) || getenv("AV_LOG_FORCE_COLOR"));
+                                ^
+                 (                          )
+2 warnings generated.
+1 warning generated.
+parseutils.c
+pixdesc.c
+random_seed.c
+../third_party/libav/libavutil/opt.c:49:13: warning: 4 enumeration values not handled in switch: 'AV_OPT_TYPE_STRING', 'AV_OPT_TYPE_BINARY', 'AV_OPT_TYPE_DICT'... [-Wswitch]
+    switch (o->type) {
+            ^
+../third_party/libav/libavutil/opt.c:142:10: warning: assigning to 'uint8_t *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    *dst = av_strdup(val);
+         ^ ~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:222:13: warning: enumeration values 'AV_OPT_TYPE_DICT' and 'AV_OPT_TYPE_CONST' not handled in switch [-Wswitch]
+    switch (o->type) {
+            ^
+../third_party/libav/libavutil/opt.c:344:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_FLAGS:     ret = snprintf(buf, sizeof(buf), "0x%08X",  *(int    *)dst);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:345:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_INT:       ret = snprintf(buf, sizeof(buf), "%d" ,     *(int    *)dst);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:346:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_INT64:     ret = snprintf(buf, sizeof(buf), "%"PRId64, *(int64_t*)dst);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:347:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_FLOAT:     ret = snprintf(buf, sizeof(buf), "%f" ,     *(float  *)dst);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:348:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_DOUBLE:    ret = snprintf(buf, sizeof(buf), "%f" ,     *(double *)dst);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:349:48: warning: passing 'uint8_t [128]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    case AV_OPT_TYPE_RATIONAL:  ret = snprintf(buf, sizeof(buf), "%d/%d",   ((AVRational*)dst)->num, ((AVRational*)dst)->den);break;
+                                               ^~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:352:34: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            *out_val = av_strdup(*(uint8_t**)dst);
+                                 ^~~~~~~~~~~~~~~
+../third_party/libav/libavutil/mem.h:218:29: note: passing argument to parameter 's' here
+char *av_strdup(const char *s) av_malloc_attrib;
+                            ^
+../third_party/libav/libavutil/opt.c:352:22: warning: assigning to 'uint8_t *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            *out_val = av_strdup(*(uint8_t**)dst);
+                     ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:354:22: warning: assigning to 'uint8_t *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            *out_val = av_strdup("");
+                     ^ ~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:364:22: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            snprintf(*out_val + i*2, 3, "%02X", bin[i]);
+                     ^~~~~~~~~~~~~~
+/usr/include/stdio.h:388:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+../third_party/libav/libavutil/opt.c:372:26: warning: passing 'uint8_t [128]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    *out_val = av_strdup(buf);
+                         ^~~
+../third_party/libav/libavutil/mem.h:218:29: note: passing argument to parameter 's' here
+char *av_strdup(const char *s) av_malloc_attrib;
+                            ^
+../third_party/libav/libavutil/opt.c:372:14: warning: assigning to 'uint8_t *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    *out_val = av_strdup(buf);
+             ^ ~~~~~~~~~~~~~~
+rational.c
+../third_party/libav/libavutil/opt.c:718:26: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            while (child = av_opt_child_class_next(c, child))
+                   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:718:26: note: place parentheses around the assignment to silence this warning
+            while (child = av_opt_child_class_next(c, child))
+                         ^
+                   (                                        )
+../third_party/libav/libavutil/opt.c:718:26: note: use '==' to turn this assignment into an equality comparison
+            while (child = av_opt_child_class_next(c, child))
+                         ^
+                         ==
+../third_party/libav/libavutil/opt.c:719:23: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if (o = av_opt_find2(&child, name, unit, opt_flags, search_flags, NULL))
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:719:23: note: place parentheses around the assignment to silence this warning
+                if (o = av_opt_find2(&child, name, unit, opt_flags, search_flags, NULL))
+                      ^
+                    (                                                                  )
+../third_party/libav/libavutil/opt.c:719:23: note: use '==' to turn this assignment into an equality comparison
+                if (o = av_opt_find2(&child, name, unit, opt_flags, search_flags, NULL))
+                      ^
+                      ==
+../third_party/libav/libavutil/opt.c:723:26: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            while (child = av_opt_child_next(obj, child))
+                   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:723:26: note: place parentheses around the assignment to silence this warning
+            while (child = av_opt_child_next(obj, child))
+                         ^
+                   (                                    )
+../third_party/libav/libavutil/opt.c:723:26: note: use '==' to turn this assignment into an equality comparison
+            while (child = av_opt_child_next(obj, child))
+                         ^
+                         ==
+../third_party/libav/libavutil/opt.c:724:23: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if (o = av_opt_find2(child, name, unit, opt_flags, search_flags, target_obj))
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:724:23: note: place parentheses around the assignment to silence this warning
+                if (o = av_opt_find2(child, name, unit, opt_flags, search_flags, target_obj))
+                      ^
+                    (                                                                       )
+../third_party/libav/libavutil/opt.c:724:23: note: use '==' to turn this assignment into an equality comparison
+                if (o = av_opt_find2(child, name, unit, opt_flags, search_flags, target_obj))
+                      ^
+                      ==
+../third_party/libav/libavutil/opt.c:729:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while (o = av_opt_next(obj, o)) {
+           ~~^~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/opt.c:729:14: note: place parentheses around the assignment to silence this warning
+    while (o = av_opt_next(obj, o)) {
+             ^
+           (                      )
+../third_party/libav/libavutil/opt.c:729:14: note: use '==' to turn this assignment into an equality comparison
+    while (o = av_opt_next(obj, o)) {
+             ^
+             ==
+20 warnings generated.
+rc4.c
+../third_party/libav/libavutil/random_seed.c:73:24: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            if (last_i && i - last_i > 4 || i - last_i > 64)
+                ~~~~~~~^~~~~~~~~~~~~~~~~ ~~
+../third_party/libav/libavutil/random_seed.c:73:24: note: place parentheses around the '&&' expression to silence this warning
+            if (last_i && i - last_i > 4 || i - last_i > 64)
+                       ^
+                (                       )
+1 warning generated.
+samplefmt.c
+sha.c
+stereo3d.c
+time.c
+tree.c
+../third_party/libav/libavutil/sha.c:329:24: warning: passing 'char [2]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    av_sha_update(ctx, "\200", 1);
+                       ^~~~~~
+../third_party/libav/libavutil/sha.c:297:47: note: passing argument to parameter 'data' here
+void av_sha_update(AVSHA* ctx, const uint8_t* data, unsigned int len)
+                                              ^
+../third_party/libav/libavutil/sha.c:331:28: warning: passing 'char [1]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        av_sha_update(ctx, "", 1);
+                           ^~
+../third_party/libav/libavutil/sha.c:297:47: note: passing argument to parameter 'data' here
+void av_sha_update(AVSHA* ctx, const uint8_t* data, unsigned int len)
+                                              ^
+../third_party/libav/libavutil/samplefmt.c:152:19: warning: assigning to 'uint8_t *' (aka 'unsigned char *') from 'const uint8_t *' (aka 'const unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    audio_data[0] = buf;
+                  ^ ~~~
+1 warning generated.
+utils.c
+2 warnings generated.
+cpu.c
+float_dsp_init.c
+lls_init.c
+xtea.c
+Linking libavutil
+==== Building libavcodec (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/libavcodec
+fft_init_aarch64.c
+fft_init_arm.c
+avpacket.c
+bitstream.c
+bitstream_filter.c
+codec_desc.c
+fft_float.c
+imgconvert.c
+log2_tab.c
+mathtables.c
+mdct_float.c
+options.c
+parser.c
+fft_init.c
+pthread.c
+pthread_frame.c
+pthread_slice.c
+../third_party/libav/libavcodec/options.c:67:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while (c = av_codec_next(c))
+           ~~^~~~~~~~~~~~~~~~~~
+qsv_api.c
+../third_party/libav/libavcodec/options.c:67:14: note: place parentheses around the assignment to silence this warning
+    while (c = av_codec_next(c))
+             ^
+           (                   )
+../third_party/libav/libavcodec/options.c:67:14: note: use '==' to turn this assignment into an equality comparison
+    while (c = av_codec_next(c))
+             ^
+             ==
+../third_party/libav/libavcodec/options.c:120:33: warning: passing 'const uint8_t *const' (aka 'const unsigned char *const') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            ret = av_opt_set(s, d->key, d->value, 0);
+                                ^~~~~~
+../third_party/libav/libavutil/opt.h:495:48: note: passing argument to parameter 'name' here
+int av_opt_set         (void *obj, const char *name, const char *val, int search_flags);
+                                               ^
+../third_party/libav/libavcodec/options.c:120:41: warning: passing 'const uint8_t *const' (aka 'const unsigned char *const') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            ret = av_opt_set(s, d->key, d->value, 0);
+                                        ^~~~~~~~
+../third_party/libav/libavutil/opt.h:495:66: note: passing argument to parameter 'val' here
+int av_opt_set         (void *obj, const char *name, const char *val, int search_flags);
+                                                                 ^
+3 warnings generated.
+sinewin.c
+utils.c
+wma.c
+../third_party/libav/libavcodec/pthread_frame.c:799:48: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    tmp = av_fast_realloc(p->released_buffers, &p->released_buffers_allocated,
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavutil/mem.h:255:48: note: passing argument to parameter 'size' here
+void *av_fast_realloc(void *ptr, unsigned int *size, size_t min_size);
+                                               ^
+1 warning generated.
+wma_common.c
+wma_freqs.c
+fdct.c
+fdctdsp_init.c
+../third_party/libav/libavcodec/utils.c:1276:29: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        if (avctx->channels && avctx->channels < 0 ||
+            ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~ ~~
+../third_party/libav/libavcodec/utils.c:1276:29: note: place parentheses around the '&&' expression to silence this warning
+        if (avctx->channels && avctx->channels < 0 ||
+                            ^
+            (                                     )
+fft_init.c
+xma2dec.c
+../third_party/libav/libavcodec/utils.c:2324:25: warning: 339 enumeration values not handled in switch: 'AV_CODEC_ID_NONE', 'AV_CODEC_ID_MPEG1VIDEO', 'AV_CODEC_ID_MPEG2VIDEO'... [-Wswitch]
+                switch (avctx->codec_id) {
+                        ^
+../third_party/libav/libavcodec/utils.c:2338:25: warning: 340 enumeration values not handled in switch: 'AV_CODEC_ID_NONE', 'AV_CODEC_ID_MPEG1VIDEO', 'AV_CODEC_ID_MPEG2VIDEO'... [-Wswitch]
+                switch (avctx->codec_id) {
+                        ^
+../third_party/libav/libavcodec/utils.c:2443:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if (err = cb(&new_codec_mutex, AV_LOCK_CREATE)) {
+            ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavcodec/utils.c:2443:17: note: place parentheses around the assignment to silence this warning
+        if (err = cb(&new_codec_mutex, AV_LOCK_CREATE)) {
+                ^
+            (                                         )
+../third_party/libav/libavcodec/utils.c:2443:17: note: use '==' to turn this assignment into an equality comparison
+        if (err = cb(&new_codec_mutex, AV_LOCK_CREATE)) {
+                ^
+                ==
+../third_party/libav/libavcodec/utils.c:2446:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if (err = cb(&new_avformat_mutex, AV_LOCK_CREATE)) {
+            ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../third_party/libav/libavcodec/utils.c:2446:17: note: place parentheses around the assignment to silence this warning
+        if (err = cb(&new_avformat_mutex, AV_LOCK_CREATE)) {
+                ^
+            (                                            )
+../third_party/libav/libavcodec/utils.c:2446:17: note: use '==' to turn this assignment into an equality comparison
+        if (err = cb(&new_avformat_mutex, AV_LOCK_CREATE)) {
+                ^
+                ==
+5 warnings generated.
+../third_party/libav/libavcodec/xma2dec.c:1850:29: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    if (!valid_frame_offset(packet, 2048, packet_bit_offset)) {
+                            ^~~~~~
+../third_party/libav/libavcodec/xma2dec.c:1676:37: note: passing argument to parameter 'packet' here
+static int valid_frame_offset(void* packet, int len, size_t bit_offset) {
+                                    ^
+../third_party/libav/libavcodec/xma2dec.c:1858:34: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  *frame_size = get_frame_length(buf, buf_size, bit_offset);
+                                 ^~~
+../third_party/libav/libavcodec/xma2dec.c:1710:38: note: passing argument to parameter 'block' here
+static int get_frame_length(uint8_t* block, int size,
+                                     ^
+../third_party/libav/libavcodec/xma2dec.c:1866:30: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  int res = collect_frame(s, buf, buf_size, bit_offset,
+                             ^~~
+../third_party/libav/libavcodec/xma2dec.c:1749:53: note: passing argument to parameter 'block' here
+static int collect_frame(XMA2DecodeCtx* s, uint8_t* block, int size,
+                                                    ^
+3 warnings generated.
+Linking libavcodec
+==== Building snappy (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/snappy
+snappy-sinksource.cc
+snappy-stubs-internal.cc
+snappy.cc
+Linking snappy
+==== Building spirv-tools (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/spirv-tools
+assembly_grammar.cpp
+binary.cpp
+diagnostic.cpp
+disassemble.cpp
+ext_inst.cpp
+instruction.cpp
+opcode.cpp
+operand.cpp
+print.cpp
+spirv_endian.cpp
+spirv_target_env.cpp
+table.cpp
+text.cpp
+text_handler.cpp
+BasicBlock.cpp
+Construct.cpp
+Function.cpp
+ValidationState.cpp
+validate.cpp
+validate_cfg.cpp
+validate_id.cpp
+validate_instruction.cpp
+validate_layout.cpp
+validate_ssa.cpp
+Linking spirv-tools
+==== Building vulkan-loader (debug_linux) ====
+Creating obj/Linux/Debug/Linux/Debug/vulkan-loader
+cJSON.c
+debug_report.c
+dev_ext_trampoline.c
+dirent_on_windows.c
+loader.c
+error: invalid argument '-std=c++14' not allowed with 'C/ObjC'
+errorerror: invalid argument '-std=c++14' not allowed with 'C/ObjC'
+: invalid argument '-std=c++14' not allowed with 'C/ObjC'
+error: invalid argument '-std=c++14' not allowed with 'C/ObjC'
+make[1]: *** [vulkan-loader.make:186: obj/Linux/Debug/Linux/Debug/vulkan-loader/cJSON.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [vulkan-loader.make:192: obj/Linux/Debug/Linux/Debug/vulkan-loader/dev_ext_trampoline.o] Error 1
+make[1]: *** [vulkan-loader.make:195: obj/Linux/Debug/Linux/Debug/vulkan-loader/dirent_on_windows.o] Error 1
+make[1]: *** [vulkan-loader.make:189: obj/Linux/Debug/Linux/Debug/vulkan-loader/debug_report.o] Error 1
+error: invalid argument '-std=c++14' not allowed with 'C/ObjC'
+make[1]: *** [vulkan-loader.make:198: obj/Linux/Debug/Linux/Debug/vulkan-loader/loader.o] Error 1
+make: *** [Makefile:220: vulkan-loader] Error 2
+make: Leaving directory '/home/mikeyd/github_repos/xenia-git/src/xenia/build'
+Building debug...
+
+- running premake...
+
+- building (all):debug...
+
+ERROR: build failed with one or more errors.
+==> ERROR: A failure occurred in build().
+    Aborting...
