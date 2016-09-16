@@ -13,6 +13,7 @@ Makefile:216: recipe for target 'vulkan-loader' failed
 make: *** [vulkan-loader] Error 2
 ```
 
+see: src/xenia/build/vulkan.loader.make
 
 # Links:
 
